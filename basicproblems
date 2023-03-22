@@ -1,0 +1,9 @@
+palindrome_numbers = []
+
+for x in range(100,1001):
+    for z in range(100,1001):
+        if str(x*z) == str(x*z)[::-1]:
+            palindrome_numbers.append(x*z)
+
+
+print(max(palindrome_numbers))
